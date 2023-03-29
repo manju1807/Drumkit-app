@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.heading{
+  margin-top: 0;
+  font-size: 2.5rem;
+  padding: 10px;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.key {
+  border: .1rem solid black;
+  border-radius: .3rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #00ff15;
+  box-shadow: 0 0 1rem #4ce074;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #35eb6e;
+}
+
+@media only screen and (max-width: 600px) {
+  .key {
+    width: 6rem;
+  }
+}
