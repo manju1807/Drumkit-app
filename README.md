@@ -1,2 +1,2 @@
-# Javascript30
-Javascript 30 day challenge
+# Drumkit-app
+Drumkit app using Vanilla Javascript.
