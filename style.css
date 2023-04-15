@@ -1,41 +1,50 @@
-body {
+*{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
 }
 
-.heading{
-  margin-top: 0;
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(249, 150, 93) 20.5%, rgb(255, 63, 185) 86.8%);
+}
+
+h1{
   font-size: 2.5rem;
-  padding: 10px;
+  padding: 1rem;
   font-family: 'Kaushan Script', cursive;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 4px #000;
 }
 
+
 .keys {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 600px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: auto;
+  grid-gap:0;
+  padding: 1rem;
 }
 
 .key {
   border: .1rem solid black;
-  border-radius: .3rem;
+  border-radius: 3px;
   margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem .5rem;
+  padding: 1rem;
+  font-size: 1rem;
   transition: all .07s ease;
-  width: 8rem;
+  width: 5rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  background: linear-gradient(135deg, rgb(35, 35, 34) 10.5%, rgb(14, 13, 13) 86.8%);
+  box-shadow: rgba(0, 0, 0, 0.50) 0px 22px 50px 4px;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .playing {
@@ -46,18 +55,124 @@ body {
 
 kbd {
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .sound {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #35eb6e;
+  text-shadow: 2px 2px 4px #000;
 }
 
-@media only screen and (max-width: 600px) {
-  .key {
-    width: 6rem;
+
+
+  /* Mobile devices */
+  @media only screen and (max-width: 767px) {
+    /* CSS rules for mobile devices */
+  *{
+      margin: 0;
+      padding: 0;
+    }
+    .heading{
+      font-size: 2.5rem;
+      padding: 1rem;
+      font-family: 'Kaushan Script', cursive;
+      text-align: center;
+      color: white;
+      background: rgba(0,0,0,0.6);
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .keys {
+      margin-top: 6%;
+      display: grid;
+      width: 85%;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap:0;
+      margin: 1rem;
+      padding: 1rem;
+    }
+
+    .key {
+      border: .1rem solid black;
+      border-radius: 3px;
+      margin: 1rem;
+      padding: 1rem;
+      font-size: .5rem;
+      transition: all .07s ease;
+      width: 4rem;
+      height: 4rem;
+      text-align: center;
+      color: white;
+    }
+
+    .sound {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      color: #35eb6e;
+    }
   }
-}
+  
+  /* Tablet devices */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for tablet devices */
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .heading{
+      font-size: 2.5rem;
+      padding: 1rem;
+      font-family: 'Kaushan Script', cursive;
+      text-align: center;
+      color: white;
+      background: rgba(0,0,0,0.6);
+      text-shadow: 2px 2px 4px #000;
+    }
+    
+    .keys {
+      margin-top: 6%;
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap:0;
+      padding: 1rem;
+    }
+  }
+  
+  /* Desktop devices */
+  @media only screen and (min-width: 992px) {
+    /* CSS rules for desktop devices */
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .heading{
+      font-size: 2.5rem;
+      padding: 1rem;
+      font-family: 'Kaushan Script', cursive;
+      text-align: center;
+      color: white;
+      background: rgba(0,0,0,0.6);
+      text-shadow: 2px 2px 4px #000;
+    }
+    
+    .keys {
+      margin-top: 6%;
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(9,1fr);
+      grid-template-rows: auto;
+      grid-gap:0;
+      padding: 1rem;
+    }
+  }
